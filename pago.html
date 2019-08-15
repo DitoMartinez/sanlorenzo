@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<title>S.L. Formas de Pago</title>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/estilos_pago.css">
+        <link rel="stylesheet" href="css/estilos_menu.css">
+	    <link rel="stylesheet" href="css/fonts.css">
+	    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	    <script src="Laboratorio Dental San Lorenzo.js"></script>	
+    </head>
+    <body>
+        <header>
+			<div class="desplegable">
+				<a href="#" class="mas"><span class="icon-home3"></span>Ver Mas</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><span class="icon-home3"></span>Inicio</a></li>
+					<li class="submenu">
+						<a><span class="icon-aid-kit"></span>Restauraciones</a>
+						<ul class="opciones">
+							<li><a href="restauraciones.html#carillas">Carillas</a></li>
+							<li><a href="restauraciones.html#emax">Coronas E-Max</a></li>
+							<li><a href="restauraciones.html#cadcam">Diseño en CadCam</a></li>
+							<li><a href="restauraciones.html#implantes">Implantes</a></li>
+							<li><a href="restauraciones.html#protesis">Prótesis Parciales</a></li>
+						</ul>
+					</li>
+					<li><a href="pedidos.html"><span class="icon-clipboard"></span>Pedidos</a></li>
+					<li class="submenu">
+						<a><span class="icon-credit-card"></span>Formas de Pago</a>
+						<ul class="opciones">
+							<li><a>Efectivo</a></li>
+							<li><a href="#formulario1">Depósito / Transferencia Bancaria</a></li>
+							<li><a href="#formulario2">Visa / MasterCard</a></li>
+						</ul>
+					</li>
+					<li><a href="encuentranos.html"><span class="icon-location2"></span>Encuéntranos</a></li>
+					<li><a href="nosotros.html"><span class="icon-rocket"></span>Nosotros</a></li>
+				</ul>
+			</nav>
+		</header>
+		<a name="formulario1"><section id="primero"></a>
+            <form>
+                <h2>
+                    Llena este formulario si deseas realizar el pago de tu pedido, o si deseas
+                    abonar a tu línea de crédito.
+                </h2>
+                <br/>
+                <h3>
+                    Esta parte debe ser llenada por el odontólogo.
+				</h3>
+                <br/><br/>
+                <label for="usuario">Dr:</label>
+                <input type="text" placeholder="Escribe tu nombre" id="usuario">
+				<br/><br/>
+				<input class="opcion" type="radio" name="tipo" id="individual">
+				<label class="multiple" for="individual">Pago de pedido individual</label>
+                <input class="multiple" type="text" placeholder="Código proporcionado">
+				<br/>
+				<input class="opcion" type="radio" name="tipo" id="linea">
+				<label class="multiple" for="linea">Abonar a tu línea de crédito</label>
+				<input class="multiple" type="text" placeholder="A qué cuenta vas a abonar">
+				<br/><br/>
+                <label for="mail">Email:</label>
+                <input type="email" placeholder="Para factura electrónica" id="mail">
+				<br/><br/>
+				<label for="cuenta">Ingresa tu número de cuenta:</label>
+				<input type="text" placeholder="Cuenta a debitar" id="cuenta">
+				<br/><br/>
+				<label for="monto">Ingresa el monto a pagar:</label>
+				<input class="calendario" type="number" placeholder="Monto a pagar en Quetzales" id="monto">
+				<br/><br/>
+				<label>Selecciona tu banco:</label>
+				<br/>
+				<input class="opcion" type="radio" name="banco" id="industrial">
+				<label class="multiple" for="industrial">Banco Industrial</label>
+				<input class="opcion" type="radio" name="banco" id="gyt">
+				<label class="multiple" for="gyt">Banco G&T</label>
+				<input class="opcion" type="radio" name="banco" id="paypal">
+				<label class="multiple" for="paypal">PayPal</label>
+				<br/><br/>
+				<input class="opcion" type="radio" name="banco" id="banrural">
+				<label class="multiple" for="banrural">Banrural</label>
+				<input class="opcion" type="radio" name="banco" id="bam">
+				<label class="multiple" for="bam">BAM</label>
+				<br/><br/>
+				<label for="fecha">Fecha programada de la transferencia:</label>
+				<input class="calendario" type="date" id="fecha">
+				<br/><br/>
+				<input type="submit" value="Transferir">
+            </form>
+		</section>
+		<a name="formulario2"><section></a>
+			<form>
+				<h2>
+					Llena este formulario si deseas pagar con tu tarjeta de Débito / Crédito.
+				</h2>
+				<br/>
+				<h3>
+					Esta parte debe ser llenada por el odontólogo.
+				</h3>
+				<br/><br/>
+				<label for="user">Dr:</label>
+                <input type="text" placeholder="Escribe tu nombre" id="user">
+				<br/><br/>
+				<input class="opcion" type="radio" name="option" id="only">
+				<label class="multiple" for="only">Pago de pedido individual</label>
+                <input class="multiple" type="text" placeholder="Código proporcionado">
+				<br/>
+				<input class="opcion" type="radio" name="option" id="credit">
+				<label class="multiple" for="credit">Abonar a tu línea de crédito</label>
+				<input class="multiple" type="text" placeholder="A qué cuenta vas a abonar">
+				<br/><br/>
+                <label for="e-address">Email:</label>
+                <input type="email" placeholder="Para factura electrónica" id="e-address">
+				<br/><br/>
+				<label for="tarjeta">Ingresa el número de tarjeta:</label>
+				<input class="card" type="text" placeholder="XXXX" id="tarjeta" maxlength="4">
+				<label class="guion"> - </label>
+				<input class="card" type="text" placeholder="XXXX" maxlength="4">
+				<label class="guion"> - </label>
+				<input class="card" type="text" placeholder="XXXX" maxlength="4">
+				<label class="guion"> - </label>
+				<input class="card" type="text" placeholder="XXXX" maxlength="4">
+				<br/><br/>
+				<label for="expiration">Fecha de expiración:</label>
+				<input class="calendario" type="date" id="expiration">
+				<br/><br/>
+				<label for="cvv">Código de seguridad:</label>
+				<input class="card" type="password" placeholder="XXX" id="cvv" maxlength="3">
+				<br/><br/>
+				<label>Tu tarjeta es:</label>
+				<br/>
+				<input class="opcion" type="radio" name="branch">
+				<label class="multiple">Visa</label>
+				<input class="opcion" type="radio" name="branch">
+				<label class="multiple">MasterCard</label>
+				<br/><br/>
+				<label for="amount">Ingresa el monto total a pagar:</label>
+				<input class="calendario" type="number" placeholder="Monto a pagar en Quetzales" id="amount">
+				<br/><br/>
+				<label>Cuotas:</label>
+				<br/>
+				<input class="opcion" type="radio" name="cuotas">
+				<label class="multiple">Cuota única</label>
+				<input class="opcion" type="radio" name="cuotas">
+				<label class="multiple">3 cuotas</label>
+				<input class="opcion" type="radio" name="cuotas">
+				<label class="multiple">6 cuotas</label>
+				<br/><br/>
+				<input type="submit" value="Procesar">
+			</form>
+		</section>
+		<footer>
+			<h3>Contáctanos</h3>
+			<div class="contacto">
+				<p>Teléfono: (502) 2362-1201 al 1204</p>
+			</div>
+			<div class="contacto">
+				<p>Email: labdentsanlorenzo@gmail.com</p>
+			</div>
+			<a href="developer.html"><input class="desarrollador" type="button" value="About Developer"></a>
+		</footer>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<title>S.L. Pedidos</title>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="css/estilos_pedidos.css">
+        <link rel="stylesheet" href="css/estilos_menu.css">
+	    <link rel="stylesheet" href="css/fonts.css">
+	    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	    <script src="Laboratorio Dental San Lorenzo.js"></script>	
+    </head>
+    <body>
+        <header>
+			<div class="desplegable">
+				<a href="#" class="mas"><span class="icon-home3"></span>Ver Mas</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html"><span class="icon-home3"></span>Inicio</a></li>
+					<li class="submenu">
+						<a><span class="icon-aid-kit"></span>Restauraciones</a>
+						<ul class="opciones">
+							<li><a href="restauraciones.html#carillas">Carillas</a></li>
+							<li><a href="restauraciones.html#emax">Coronas E-Max</a></li>
+							<li><a href="restauraciones.html#cadcam">Diseño en CadCam</a></li>
+							<li><a href="restauraciones.html#implantes">Implantes</a></li>
+							<li><a href="restauraciones.html#protesis">Prótesis Parciales</a></li>
+						</ul>
+					</li>
+					<li><a href="pedidos.html"><span class="icon-clipboard"></span>Pedidos</a></li>
+					<li class="submenu">
+						<a><span class="icon-credit-card"></span>Formas de Pago</a>
+						<ul class="opciones">
+							<li><a>Efectivo</a></li>
+							<li><a href="pago.html#formulario1">Depósito / Transferencia Bancaria</a></li>
+							<li><a href="pago.html#formulario2">Visa / MasterCard</a></li>
+						</ul>
+					</li>
+					<li><a href="encuentranos.html"><span class="icon-location2"></span>Encuéntranos</a></li>
+					<li><a href="nosotros.html"><span class="icon-rocket"></span>Nosotros</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+            <form>
+                <h2>
+                    Realiza tus pedidos llenando este formulario, no olvides enviar las impresiones
+                    dentales de tu paciente con la adecuada identificación.
+                </h2>
+                <br/>
+                <h3>
+                    Esta parte debe ser llenada por el odontólogo.
+                </h3>
+                <br/><br/>
+                <label for="nombre">Dr:</label>
+                <input type="text" placeholder="Escribe tu nombre" id="nombre">
+                <br/><br/>
+                <label for="clinica">Nombre de la Clínica:</label>
+                <input type="text" placeholder="Nombre de tu clínica" id="clinica">
+                <br/><br/>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" placeholder="Teléfono" id="telefono" maxlength="8">
+                <br/><br/>
+                <label for="correo">Email:</label>
+                <input type="email" placeholder="Email (opcional)" id="correo">
+                <br/><br/>
+                <label for="direccion">Dirección:</label>
+                <input type="text" placeholder="Dónde enviaremos tu pedido" id="direccion">
+                <br/><br/>
+                <label for="paciente">Nombre del paciente:</label>
+                <input type="text" placeholder="Nombre de tu paciente" id="paciente">
+                <br/><br/>
+                <label>Tipo de tratamiento:</label>
+                <br/><br/>
+                <input class="opcion" type="checkbox" id="carillas">
+                <label class="multiple" for="carillas">Carillas</label>
+                <input class="opcion" type="checkbox" id="implantes">
+                <label class="multiple" for="implantes">Implantes</label>
+                <br/><br/>
+                <input class="opcion" type="checkbox" id="coronas">
+                <label class="multiple" for="coronas">Coronas E-Max</label>
+                <input class="opcion" type="checkbox" id="protesis">
+                <label class="multiple" for="protesis">Prótesis Parciales</label>
+                <br/><br/>
+                <input class="opcion" type="checkbox" id="cadcam">
+                <label class="multiple" for="cadcam">Diseño en CadCam</label>
+                <br/><br/>
+                <label for="piezas">Número de piezas a restaurar:</label>
+                <input type="number" placeholder="Número de piezas" maxlength="2" id="piezas">
+                <br/><br/>
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea placeholder="Comentarios" id="comentarios"></textarea>
+                <br/><br/>
+                <label>Forma de pago:</label>
+                <br/><br/>
+                <input class="opcion" type="radio" name="pago" id="efectivo">
+                <label class="multiple" for="efectivo">Efectivo (recoger en laboratorio)</label>
+                <br/><br/>
+                <input class="opcion" type="radio" name="pago" id="bancaria">
+                <label class="multiple" for="bancaria">Depósito / Transferencia Bancaria</label>
+                <br/><br/>
+                <input class="opcion" type="radio" name="pago" id="tarjeta">
+                <label class="multiple" for="tarjeta">Visa / MasterCard</label>
+                <br/><br/>
+                <h3>
+                    Guarda el siguiente código de pedido para futura referencia: XX-XX
+                </h3>
+                <br/><br/>
+                <input type="submit" value="Realizar Pedido">
+            </form>
+		</section>
+		<footer>
+			<h3>Contáctanos</h3>
+			<div class="contacto">
+				<p>Teléfono: (502) 2362-1201 al 1204</p>
+			</div>
+			<div class="contacto">
+				<p>Email: labdentsanlorenzo@gmail.com</p>
+			</div>
+			<a href="developer.html"><input class="desarrollador" type="button" value="About Developer"></a>
+		</footer>
+    </body>
+</html>
